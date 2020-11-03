@@ -75,5 +75,45 @@
 }
 
 .ex-11-icon:hover {
-    transform: rotate(300deg) translateZ(0);
+    animation: circle 2s;
+    
 }
+
+@keyframes circle {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(300deg);
+    }
+
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: button_leftright_top 3s;
+}
+
+@keyframes button_leftright_top {
+    0%{
+        left:10%;
+    }
+    50%{
+        left: 60%;
+    }
+}
+
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: button_leftright_bottom 3s;
+}
+
+    @keyframes button_leftright_bottom {
+        0% {
+            right: 20%;
+        }
+
+        50% {
+            right: 60%;
+        }
+    }
